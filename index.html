@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Document</title>
+</head>
+<body class="dark-theme">
+  <div class="root">
+    <button id="themeToggle" class="themeToggle" name="themeToggle" type="button">
+      <img src="./assets/images/sun-icon.svg" alt="" class="themeIcon">
+    </button>
+    <div class="container">
+      <div id="timer" class="timer">
+        <div id="time" class="time">
+          <input id="minutes" class="minutes" type="number" min="0" max="60" value="01">:<input id="seconds" class="seconds" type="number" min="0" max="60" value="00">
+        </div>
+      </div>
+      <div class="controls">
+        <img src="./assets/images/play-circle.svg" alt="" id="start">
+        <img src="./assets/images/timer.svg" alt="" id="reset">
+        <button id="volume-mode" type="button">
+          <img src="./assets/images/speaker-none.svg" alt="">
+        </button>
+      </div>
+    </div>
+    <audio src="./assets/sounds/timer-sound.mp3"></audio>
+  </div>
+  
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
