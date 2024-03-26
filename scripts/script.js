@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const themeToggleButton = document.getElementById('themeToggle');
   const themeIcon = themeToggleButton.querySelector('img');
 
+  const LIGHT_THEME = 'light-theme';
+  const DARK_THEME = 'dark-theme';
+
   themeToggleButton.addEventListener('click', function () {
     const currentTheme = document.body.className;
 
